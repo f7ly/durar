@@ -1,0 +1,23 @@
+{% extends "layouts.master" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ 'durar-custom.css' | asset }}">
+{% endblock %}
+
+{% block content %}
+  {% include "components/home/durar-hero.twig" %}
+  {% include "components/home/durar-category-circles.twig" %}
+
+  {# مكونات سلة الأساسية: المنتجات والبنرات وغيرها من إعدادات التاجر #}
+  <div class="durar-home-components">
+    {% component home %}
+  </div>
+
+  {% include "components/home/durar-promo-grid.twig" %}
+  {% include "components/home/durar-collections.twig" %}
+{% endblock %}
+
+{% block scripts %}
+<script defer src="{{ 'home.js' | asset }}"></script>
+<script defer src="{{ 'durar-custom.js' | asset }}"></script>
+{% endblock %}

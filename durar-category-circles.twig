@@ -1,0 +1,21 @@
+
+<section class="container durar-categories" aria-label="أقسام درر">
+  {% set durar_categories = [
+    {'title':'المباخر','icon':'sicon-fire','url':'/categories'},
+    {'title':'الأكواب','icon':'sicon-coffee','url':'/categories'},
+    {'title':'الضيافة','icon':'sicon-gift','url':'/categories'},
+    {'title':'صواني وأطباق','icon':'sicon-grid','url':'/categories'},
+    {'title':'ديكور المنزل','icon':'sicon-home','url':'/categories'},
+    {'title':'الهدايا','icon':'sicon-gift','url':'/categories'},
+    {'title':'رمضان','icon':'sicon-moon','url':'/categories'},
+    {'title':'العروض','icon':'sicon-percentage','url':'/offers'}
+  ] %}
+  <div class="durar-categories__rail">
+    {% for item in durar_categories %}
+      <a href="{{ item.url }}" class="durar-category">
+        <span class="durar-category__circle"><i class="{{ item.icon }}"></i></span>
+        <span>{{ item.title }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>

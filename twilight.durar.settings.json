@@ -1,0 +1,35 @@
+{
+  "_note": "ادمج الحقول التالية داخل settings في twilight.json الخاص بـ Theme Raed، ولا تستبدل الملف بالكامل.",
+  "settings": [
+    {
+      "id": "durar_enable_luxury_style",
+      "type": "boolean",
+      "label": "تفعيل هوية درر الفاخرة",
+      "value": true
+    },
+    {
+      "id": "durar_hero_title",
+      "type": "string",
+      "label": "عنوان البنر الرئيسي",
+      "value": "تفاصيل صغيرة… تصنع جمال المكان"
+    },
+    {
+      "id": "durar_hero_subtitle",
+      "type": "string",
+      "label": "وصف البنر",
+      "value": "مختارات فاخرة للمنزل والضيافة والهدايا والمباخر."
+    },
+    {
+      "id": "durar_gold",
+      "type": "string",
+      "label": "لون شامبين درر",
+      "value": "#D4AF7C"
+    },
+    {
+      "id": "durar_charcoal",
+      "type": "string",
+      "label": "لون فحمي درر",
+      "value": "#1F1B17"
+    }
+  ]
+}
